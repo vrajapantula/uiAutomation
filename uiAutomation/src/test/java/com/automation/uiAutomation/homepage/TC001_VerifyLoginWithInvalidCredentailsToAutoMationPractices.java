@@ -22,11 +22,12 @@ public class TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices extend
 	
 	@Test
 	public void myTest() throws InterruptedException{
-			
+		
 		log.info("============Starting of TestCase:" + "TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices" + "===================");
 		homePage = new HomePage(driver);		
 		homePage.loginToApplication("tett@gmail.com", "pwd");
 		Assert.assertTrue(homePage.getInvalidLoginText().equals("Invalid password."));
+		
 		
 		
 	}
