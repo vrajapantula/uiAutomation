@@ -2,24 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12658" started-at="2017-09-18T13:55:27Z" finished-at="2017-09-18T13:55:40Z">
+  <suite name="Default suite" duration-ms="12600" started-at="2017-09-19T14:20:06Z" finished-at="2017-09-19T14:20:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12658" started-at="2017-09-18T13:55:27Z" finished-at="2017-09-18T13:55:40Z">
-      <class name="com.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices@553f17c]" name="setUp" is-config="true" duration-ms="9252" started-at="2017-09-18T19:25:27Z" finished-at="2017-09-18T19:25:36Z">
+    <test name="Default test" duration-ms="12600" started-at="2017-09-19T14:20:06Z" finished-at="2017-09-19T14:20:19Z">
+      <class name="com.automation.uiAutomation.homepage.TC003_VerifyLoginWithDifferentRecords">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.uiAutomation.homepage.TC003_VerifyLoginWithDifferentRecords@271053e1]" name="setUp" is-config="true" duration-ms="8984" started-at="2017-09-19T19:50:06Z" finished-at="2017-09-19T19:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="myTest()[pri:0, instance:com.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices@553f17c]" name="myTest" duration-ms="3240" started-at="2017-09-18T19:25:36Z" finished-at="2017-09-18T19:25:40Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.automation.uiAutomation.homepage.TC003_VerifyLoginWithDifferentRecords@271053e1]" name="testLogin" duration-ms="3233" started-at="2017-09-19T19:50:16Z" data-provider="getTestData" finished-at="2017-09-19T19:50:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaaa@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaa]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myTest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices@553f17c]" name="endTest" is-config="true" duration-ms="156" started-at="2017-09-18T19:25:40Z" finished-at="2017-09-18T19:25:40Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.automation.uiAutomation.homepage.TC003_VerifyLoginWithDifferentRecords@271053e1]" name="endTest" is-config="true" duration-ms="0" started-at="2017-09-19T19:50:19Z" finished-at="2017-09-19T19:50:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices -->
+      </class> <!-- com.automation.uiAutomation.homepage.TC003_VerifyLoginWithDifferentRecords -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

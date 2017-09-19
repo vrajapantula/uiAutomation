@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices"/>
+      <class name="com.automation.uiAutomation.homepage.TC002_VerifyRegistartion"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

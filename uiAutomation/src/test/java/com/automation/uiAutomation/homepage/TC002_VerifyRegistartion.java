@@ -23,8 +23,14 @@ public class TC002_VerifyRegistartion extends TestBase {
 	@Test
 	public void myTest() throws InterruptedException{
 		log.info("============Starting of TestCase:" + "TC002_VerifyRegistartion" + "===================");
-		homePage = new HomePage(driver);
-		homePage.registerUser();			
+//		homePage = new HomePage(driver);
+//		homePage.registerUser();
+		
+
+		String[][] data =  getData("LoginTest");
+		
+		System.out.println("RowCount: " + data.length);
+		System.out.println("Column Count: " + data[0].length);
 	}
 	
 	@AfterClass

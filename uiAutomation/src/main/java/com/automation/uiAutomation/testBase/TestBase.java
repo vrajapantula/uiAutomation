@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.automation.uiAutomation.excelReader.Excel_Reader;
+
 public class TestBase {
 	
 	//1. Logger
@@ -16,7 +18,7 @@ public class TestBase {
 	
 	public WebDriver driver;	
 	public static Logger log = Logger.getRootLogger();
-	
+	public Excel_Reader execl = null;
 	String url = "http://automationpractice.com/index.php";
 	String browser = "chrome";
 	
@@ -44,6 +46,15 @@ public class TestBase {
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	}
+	
+	public String[][] getData(String sheetName){
+		//System.out.println(System.getProperty("user.dir")+ "\\src\\main\\java\\com\\automation\\uiAutomation\\data\\");
+		String path = System.getProperty("user.dir")+"\\src\\main\\java\\com\\automation\\uiAutomation\\data\\TestData.xlsx";
+		System.out.println(path);
+		Excel_Reader execl = new Excel_Reader(path);
+		String[][] data = execl.getDataFromSheet("LoginTest");
+		return  data;
 	}
 			
 	

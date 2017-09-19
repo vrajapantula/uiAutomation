@@ -13,8 +13,7 @@ public class TC001_VerifyLoginWithInvalidCredentailsToAutoMationPractices extend
 	
 	HomePage homePage;
 	@BeforeTest
-	public void setUp(){	
-		log.info("BeforeTest");
+	public void setUp(){			
 		init();
 			
 	}
